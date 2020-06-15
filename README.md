@@ -30,6 +30,11 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## Specifications
+
+1. The program....
+
+
 ### License
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
