@@ -11,29 +11,56 @@
   </head>
   <body>
     <div class ="container">
-      <!-- <h1>Destinations</h1>
-      <div id="pdx-listener" onclick="pdxDisplay()">
-        <h2>Portland:</h2>
-        <ul id="pdx">
-
-        </ul>
+      <div class="jumbotron">
+        <h2>Destination Log</h2>
       </div>
-      <div id="tokyo-listener" onclick="tokyoDisplay(tokyo)">
-        <h2>Tokyo:</h2>
-        <ul id=tokyo>
-
-        </ul>  
-      <div id="paris-listener" onclick="parisDisplay()">
-        <h2>Paris:</h2>
-        <ul id="paris"> -->
-
-        <!-- </ul> -->
-        <button type="submit" id="pdx" class="btn">Portland</button>
-
-        <div id="result">
+      
+      <form id="destination">
+        <div class=form-group>
+            <label for="location">Location</label>
+            <input type="text" id="location" class="form-control">
+          </div>  
+          <div class="form-group">
+            <label for="landmark">Landmark</label>
+            <input class="form-control" type="text" id="landmark">
+          </div>
+          <div class="form-group">  
+            <label for="yearVisited">Year Visited</label>
+            <input class="form-control" type="text" id="yearVisited">
+          </div>    
+          <div class="form-group">
+            <label for="favActivity">Favorite Activity</label>
+            <input class="form-control" type="text" id="favActivity">
+          </div>
+          <div class="form-group">    
+            <label for="favorite-food">Favorite Food</label>
+            <input class="form-control" type="text" id="favorite-food">
+          </div>
+          <button type="submit" id="destination-form-button" class="btn">Submit</button>
+        </form>
+        
+        <!-- </ul>
+          <button type="submit" id="pdx" class="btn">Portland</button>
           
+        <div id="result"> -->
+
         </div>
       </div>  
     </div>
   </body>
-</html>
+  </html>
+  <!-- <h1>Destinations</h1>
+  <div id="pdx-listener" onclick="pdxDisplay()">
+    <h2>Portland:</h2>
+    <ul id="pdx">
+
+    </ul>
+  </div>
+  <div id="tokyo-listener">
+    <h2>Tokyo:</h2>
+    <ul id=tokyo>
+
+    </ul>  
+  <div id="paris-listener" onclick="parisDisplay()">
+    <h2>Paris:</h2>
+    <ul id="paris"> </ul> -->

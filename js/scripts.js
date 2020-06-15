@@ -7,21 +7,31 @@ function Destination (location, landmark, yearVisited, favActivity, favFood) {
 }
 
 Destination.prototype.summary = function() {
-  return "Want to take a vacation? Come visit " + this.location  
+  return "<li>" + this.location + "</li>" + "<li>" + this.landmark + "</li>" + "<li>" + this.yearVisited + "</li>" + "<li>" + this.favActivity + "</li>" + "<li>" + this.favFood + "</li>";
+}
+
+function pdxDisplay () {
+
+}
+
+function destinationDisplay (destination) {
+  $("ul#tokyo").append(destination.summary());
+}
+
+function parisDisplay () {
+  
 }
 
 $(document).ready (function () {
+  $("form#destination").submit(function(event){
+    event.preventDefault();
+    let location = $("input#location").val();
+    let landmark = $("input#landmark").val();
+    let yearVisited = $("input#yearVisited").val();
+    let favActivity = $("input#favActivity").val();
+    let favFood = $("input#favFood").val();
 
-  //let tokyo = new Destination ("Tokyo", "Tokyo Tower", "2015", "Eating Food", "Takoyaki");
-  let paris = new Destination ();
-  let pdx = new Destination ("Portand, OR", "Voodoo Doughnuts", "2015", "Riding a Bike");
+    let newDestination = new Destination (location, landmark, yearVisited, favActivity, favFood);
 
-  $("#tokyo-listener").click(function () {
-    let tokyo = new Destination ("Tokyo", "Tokyo Tower", "2015", "Eating Food", "Takoyaki");
-    tokyoDisplay(tokyo);
-  });
-
-  $("#pdx").click(function() {
-    $("#result").text(pdx.summary());
   });
 });
