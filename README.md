@@ -32,8 +32,20 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ## Specifications
 
-1. The program....
+1. The program generates several location objects on page load which have the following key-value pairs: location, landmarks visited, time of year visited, weather, favorite activity, and favorite food.
+ * Sample Input: N/A
+ * Sample Output: N/A
+ * Is Complete: _False_
 
+ 2. The program displays location names in the DOM for the user to interact/click on.
+ * Sample Input: N/A
+ * Sample Output: Paris, Portland, Tokyo
+ * Is Complete: _False_
+ 
+ 3. The program displays the key-value pairs of each destination object when the destination label is clicked on.
+ * Sample Input: Click on Paris
+ * Sample Output: Paris, Eiffel Tower, Spring 2013, Rainy, Insulting French People, Olives
+ * Is Complete: _False_
 
 ### License
 
