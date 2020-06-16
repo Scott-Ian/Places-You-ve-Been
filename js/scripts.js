@@ -10,16 +10,17 @@ Destination.prototype.summary = function() {
   return "<li>" + this.location + "</li>" + "<li>" + this.landmark + "</li>" + "<li>" + this.yearVisited + "</li>" + "<li>" + this.favActivity + "</li>" + "<li>" + this.favFood + "</li>";
 }
 
-function pdxDisplay () {
-
-}
-
 function destinationDisplay (destination) {
   $("ul#tokyo").append(destination.summary());
 }
 
-function parisDisplay () {
-  
+function displayDestinationDetails(locationToDisplay){
+  let locationList = $("ul#result");
+  let htmlForDetails = "";
+  Object.entries(locationToDisplay).forEach (function (destination) {
+    htmlForDetails += "<li>" + destination + "</li>";
+  });
+  locationList.html(htmlForDetails);
 }
 
 $(document).ready (function () {
@@ -32,6 +33,7 @@ $(document).ready (function () {
     let favFood = $("input#favFood").val();
 
     let newDestination = new Destination (location, landmark, yearVisited, favActivity, favFood);
-
+    displayDestinationDetails(newDestination);
+    console.log("PlaceHolder")
   });
 });
